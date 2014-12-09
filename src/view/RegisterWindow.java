@@ -23,7 +23,6 @@ public class RegisterWindow extends VentaOnline {
     public RegisterWindow() 
     { 
         initComponents();
-        initMyOwnComponents();
     }
 
     @SuppressWarnings("unchecked")
@@ -324,7 +323,7 @@ public class RegisterWindow extends VentaOnline {
         String CBProfile = "Usuario";
         String FechaObtenida = "";
         
-       FechaObtenida = df.format(jDCDateOfBirth.getDate());
+        FechaObtenida = df.format(jDCDateOfBirth.getDate());
         //cargarCombo();
        RegisterWindowController.initOutlets(jTFName, jTFLastName,  jTFID, FechaObtenida, jTFEmail, jTFConfirmEmail, jTFAddress, jTFUserName, CBProfile, jPFPassword, jPFConfirmPassword);
        RegisterWindowController.saveUsersInXML();

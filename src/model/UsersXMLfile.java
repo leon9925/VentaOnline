@@ -346,7 +346,7 @@ public class UsersXMLfile {
             Element setAttribute = newChild.setAttribute(Util.USER_DATEOFBIRTH_TAG, user.getDateOfbirth());
             newChild.setAttribute(Util.USER_EMAIL_TAG, user.getEmail());
             newChild.setAttribute(Util.USER_ADDRESS_TAG, user.getAddress());
-            newChild.setAttribute(Util.USER_PROFILE_TAG, user.getProfile());
+            Element setAttribute1 = newChild.setAttribute(Util.USER_PROFILE_TAG, user.getProfile());
             newChild.setAttribute(Util.USER_USERNAME_TAG, user.getUserName());
             newChild.setAttribute(Util.USER_PASSWORD_TAG, user.getPassword());            
 
